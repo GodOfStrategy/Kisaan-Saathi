@@ -1,1 +1,3 @@
 # Kisaan-Saathi
+I am making a website that will take the Ph of the farmer's soil as input to determine the best crop to sow, it will also predict the yield the farmer will get and the money the farmer will earn as well as the money the farmer will earn after the crop is harvested. If the farmer would like to grow something not suitable for current Ph level of his soil, so the website will also advice the farmer to add lime or sulfur to increase or decrease the Ph for the crop of the farmer's choice. The website will be available in multiple languages for the farmers in India._<img width="1920" height="1020" alt="Screenshot 2026-01-21 202808" src="https://github.com/user-attachments/assets/4c489f1e-6bcd-4489-bacf-82d4f56fba71" />
+_
