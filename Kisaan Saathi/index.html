@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kisaan Saathi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+    <header>
+        <h1>Kisaan Saathi</h1>
+        <p>Helping Farmers Choose the right crop.</p>
+        <select name="" id="language">
+            <option value="en">English</option>
+            <option value="hi">Hindi</option>
+            <option value="mr">Marathi</option>
+        </select>
+        <p>Tamil (Coming Soon!)</p>
+            <p>Gujrati (Coming Soon!)</p>
+    </header>
+    <main>
+        <h2>Enter Soil details</h2>
+        <form id="soilForm">
+  <label for="ph">Soil pH:</label>
+  <input type="number" id="ph" name="soilPh" min="0" max="14" step="0.1" required>
+
+  <label for="length">Field Length (m):</label>
+  <input type="number" id="length" name="length" required>
+
+  <label for="width">Field Width (m):</label>
+  <input type="number" id="width" name="width" required>
+
+  <label for="crop">Preferred Crop:</label>
+<select id="crop" name="crop" required>
+  <option value="">--Select Crop--</option>
+
+  <!-- Cereals -->
+  <option value="wheat_bread">Wheat (Bread)</option>
+  <option value="wheat_durum_dicoccum">Wheat (Durum/Dicoccum)</option>
+  <option value="wheat_desi">Wheat (Desi)</option>
+  <option value="barley">Barley</option>
+  <option value="malt_barley">Malt Barley</option>
+  <option value="paddy_coarse">Paddy (Coarse)</option>
+  <option value="paddy_medium">Paddy (Medium)</option>
+  <option value="paddy_pusa44">Paddy (Pusa-44)</option>
+  <option value="paddy_basmati">Paddy (Basmati)</option>
+  <option value="paddy_hybrid_A">Paddy Hybrid (A Line)</option>
+  <option value="paddy_hybrid_BR">Paddy Hybrid (B & R Line)</option>
+  <option value="maize_inbred">Maize (Inbred Lines)</option>
+  <option value="maize_varieties">Maize (Varieties & Composites)</option>
+  <option value="sorghum_A">Sorghum (A Line)</option>
+  <option value="sorghum_BR">Sorghum (B & R Line)</option>
+  <option value="sorghum_varieties">Sorghum (Varieties & Composites)</option>
+  <option value="bajra_A">Bajra (A Line)</option>
+  <option value="bajra_BR">Bajra (B & R Lines)</option>
+  <option value="bajra_varieties">Bajra (Varieties & Composites)</option>
+  <option value="finger_millet">Finger Millet (Ragi)</option>
+  <option value="foxtail_millet">Foxtail Millet</option>
+  <option value="kodo_millet">Kodo Millet</option>
+  <option value="proso_millet">Proso Millet</option>
+  <option value="little_millet">Little Millet</option>
+
+  <!-- Pulses -->
+  <option value="moong">Moong</option>
+  <option value="urd">Urd</option>
+  <option value="arhar_varieties">Arhar (Varieties)</option>
+  <option value="arhar_hybrid_A">Arhar Hybrid (A Line)</option>
+  <option value="arhar_hybrid_BR">Arhar Hybrid (B & R Lines)</option>
+  <option value="cowpea">Cowpea</option>
+  <option value="gram_kabuli">Gram (Kabuli)</option>
+  <option value="gram_desi">Gram (Desi)</option>
+  <option value="lentil">Lentil</option>
+  <option value="pea">Pea</option>
+  <option value="mothbean">Mothbean</option>
+  <option value="rajmash">Rajmash</option>
+  <option value="horsegram">Horsegram</option>
+
+  <!-- Oilseeds -->
+  <option value="groundnut">Groundnut</option>
+  <option value="soybean">Soybean</option>
+  <option value="sunflower_varieties">Sunflower (Varieties)</option>
+  <option value="sunflower_hybrid_A">Sunflower Hybrid (A Line)</option>
+  <option value="sunflower_hybrid_BR">Sunflower Hybrid (B & R Line)</option>
+  <option value="castor_varieties">Castor (Varieties)</option>
+  <option value="castor_hybrid_A">Castor Hybrid (A Line)</option>
+  <option value="castor_hybrid_BR">Castor Hybrid (B & R Line)</option>
+  <option value="sesame">Sesame</option>
+  <option value="niger">Niger</option>
+  <option value="rapeseed_varieties">Rapeseed/Mustard (Varieties)</option>
+  <option value="rapeseed_hybrid_A">Rapeseed/Mustard Hybrid (A Line)</option>
+  <option value="rapeseed_hybrid_BR">Rapeseed/Mustard Hybrid (B & R Line)</option>
+  <option value="toria">Toria</option>
+  <option value="taramira">Taramira</option>
+  <option value="safflower_varieties">Safflower (Varieties)</option>
+  <option value="safflower_hybrid_female">Safflower Hybrid (Female Parent)</option>
+  <option value="safflower_hybrid_male">Safflower Hybrid (Male Parent)</option>
+  <option value="linseed">Linseed</option>
+  <!-- Fibre Crops --> 
+  <option value="jute">Jute</option>
+  <option value="mesta">Mesta</option>
+  <option value="sunhemp">Sunhemp</option>
+  <option value="cotton_arboreum">Cotton (G. arboreum)</option>
+  <option value="cotton_hirsutum">Cotton (G. hirsutum)</option>
+  <option value="cotton_barbadense">Cotton (G. barbadense)</option>
+  <option value="cotton_hybrid_two_female">Cotton Hybrid Two-Line (Female Parent)</option>
+  <option value="cotton_hybrid_two_male">Cotton Hybrid Two-Line (Male Parent)</option>
+  <option value="cotton_hybrid_three_A">Cotton Hybrid Three-Line (A Line)</option>
+  <option value="cotton_hybrid_three_RB">Cotton Hybrid Three-Line (R & B Line)</option>
+
+  <!-- Forage Crops -->
+  <option value="guar">Guar</option>
+  <option value="teosinte">Teosinte</option>
+  <option value="lucerne">Lucerne</option>
+  <option value="berseem">Berseem</option>
+  <option value="oat">Oat</option>
+  <option value="fodder_cowpea">Fodder Cowpea</option>
+  <option value="fodder_maize">Fodder Maize</option>
+  <option value="fodder_jowar_single">Fodder Jowar (Single-cut)</option>
+  <option value="fodder_jowar_multi">Fodder Jowar (Multi-cut)</option>
+  <option value="fodder_bajra">Fodder Bajra</option>
+  <option value="dhaincha">Dhaincha</option>
+</select>
+<button type="submit" form="soilForm">Get Recommendation</button>
+<div id="recommendation"></div>
+<script src="script.js"></script>
+<footer> <p>&copy; 2026 Kisaan Saathi</p></footer>
+</body>
+</html>
